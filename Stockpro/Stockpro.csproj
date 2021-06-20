@@ -106,6 +106,9 @@
     <EmbeddedResource Include="Product Manager.resx">
       <DependentUpon>Product Manager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sales Report.resx">
+      <DependentUpon>Sales Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
