@@ -321,9 +321,8 @@ namespace Stockpro
             this.lblUpdateId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateId.Location = new System.Drawing.Point(29, 64);
             this.lblUpdateId.Name = "lblUpdateId";
-            this.lblUpdateId.Size = new System.Drawing.Size(45, 16);
+            this.lblUpdateId.Size = new System.Drawing.Size(0, 16);
             this.lblUpdateId.TabIndex = 48;
-            this.lblUpdateId.Text = "label4";
             // 
             // Product_Manager
             // 
