@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Product_management
+namespace Stockpro
 {
-    public partial class Form1 : Form
+    public partial class Register : Form
     {
-        public Form1()
+        public Register()
         {
             InitializeComponent();
         }
@@ -22,19 +22,11 @@ namespace Product_management
 
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void linkLblLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Login lw = new Login();
+            lw.Show();
         }
     }
 }

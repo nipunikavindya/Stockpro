@@ -35,12 +35,12 @@ namespace Stockpro
             this.productDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.updateStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.updateStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,7 @@ namespace Stockpro
             this.productDetailsToolStripMenuItem.Name = "productDetailsToolStripMenuItem";
             this.productDetailsToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
             this.productDetailsToolStripMenuItem.Text = "Product Details";
+            this.productDetailsToolStripMenuItem.Click += new System.EventHandler(this.productDetailsToolStripMenuItem_Click);
             // 
             // orderDetailsToolStripMenuItem
             // 
@@ -88,11 +89,26 @@ namespace Stockpro
             this.stockManagementToolStripMenuItem.Text = "Stock Management";
             this.stockManagementToolStripMenuItem.Click += new System.EventHandler(this.stockManagementToolStripMenuItem_Click);
             // 
+            // updateStockToolStripMenuItem
+            // 
+            this.updateStockToolStripMenuItem.Name = "updateStockToolStripMenuItem";
+            this.updateStockToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.updateStockToolStripMenuItem.Text = "Reset Stock";
+            this.updateStockToolStripMenuItem.Click += new System.EventHandler(this.updateStockToolStripMenuItem_Click);
+            // 
+            // deleteStockToolStripMenuItem
+            // 
+            this.deleteStockToolStripMenuItem.Name = "deleteStockToolStripMenuItem";
+            this.deleteStockToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.deleteStockToolStripMenuItem.Text = "Delete Stock";
+            this.deleteStockToolStripMenuItem.Click += new System.EventHandler(this.deleteStockToolStripMenuItem_Click);
+            // 
             // reportToolStripMenuItem
             // 
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
             this.reportToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.reportToolStripMenuItem.Text = "Report";
+            this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
             // 
             // statusStrip
             // 
@@ -109,20 +125,6 @@ namespace Stockpro
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
-            // 
-            // updateStockToolStripMenuItem
-            // 
-            this.updateStockToolStripMenuItem.Name = "updateStockToolStripMenuItem";
-            this.updateStockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.updateStockToolStripMenuItem.Text = "Reset Stock";
-            this.updateStockToolStripMenuItem.Click += new System.EventHandler(this.updateStockToolStripMenuItem_Click);
-            // 
-            // deleteStockToolStripMenuItem
-            // 
-            this.deleteStockToolStripMenuItem.Name = "deleteStockToolStripMenuItem";
-            this.deleteStockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.deleteStockToolStripMenuItem.Text = "Delete Stock";
-            this.deleteStockToolStripMenuItem.Click += new System.EventHandler(this.deleteStockToolStripMenuItem_Click);
             // 
             // OnlineDeliverySystem
             // 
