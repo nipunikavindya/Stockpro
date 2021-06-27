@@ -31,5 +31,17 @@ namespace Stockpro
             txtpassword.Clear();
             txtusername.Focus();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Register rw = new Register();
+            rw.Show();
+        }
     }
 }
