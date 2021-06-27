@@ -28,10 +28,10 @@ namespace Stockpro
 
         private void customerDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           /*all the pages should be connected
-            * Customer cus = new Customer();
-            stk.MdiParent = this;
-            stk.Show();*/
+            customer cs = new customer();
+            cs.MdiParent = this;
+            cs.StartPosition = FormStartPosition.CenterScreen;
+            cs.Show();
         }
 
         private void updateStockToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,6 +58,22 @@ namespace Stockpro
         private void OnlineDeliverySystem_FormClosing(object sender, FormClosingEventArgs e)
         {
 
+        }
+
+        private void reportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sales_Report sr = new Sales_Report();
+            sr.MdiParent = this;
+            sr.StartPosition = FormStartPosition.CenterScreen;
+            sr.Show();
+        }
+
+        private void productDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Product_Manager pr = new Product_Manager();
+            pr.MdiParent = this;
+            pr.StartPosition = FormStartPosition.CenterScreen;
+            pr.Show();
         }
     }
 }
