@@ -97,6 +97,9 @@
     <Compile Include="ResetStock.Designer.cs">
       <DependentUpon>ResetStock.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DeleteStock.resx">
       <DependentUpon>DeleteStock.cs</DependentUpon>
     </EmbeddedResource>
