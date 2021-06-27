@@ -20,6 +20,7 @@ namespace Stockpro
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Getting the time period 
             DateTime now = DateTime.Now;
             int month = now.Month - 1;
             int year = now.Year;
@@ -49,6 +50,7 @@ namespace Stockpro
 
             con.Open();
 
+            //Retrieving item sales count
             string qtycount = "";
             int sum = 0;
 
@@ -86,7 +88,7 @@ namespace Stockpro
 
             lblItemSalesCount.Text = sum.ToString();
 
-
+            //Calculating Net Income
             int qty = 0;
             int price = 0;
             int tp = 0;
@@ -108,7 +110,7 @@ namespace Stockpro
 
             lblNetIncome.Text = tp.ToString();
 
-
+            //Retrieving most sold item
             int qty1 = 0;
             int maximum = 0;
             int prodid = 0;
