@@ -53,6 +53,7 @@ namespace Stockpro
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblUpdateId = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -83,7 +84,7 @@ namespace Stockpro
             // btnUpdateClear
             // 
             this.btnUpdateClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateClear.Location = new System.Drawing.Point(57, 180);
+            this.btnUpdateClear.Location = new System.Drawing.Point(57, 215);
             this.btnUpdateClear.Name = "btnUpdateClear";
             this.btnUpdateClear.Size = new System.Drawing.Size(120, 23);
             this.btnUpdateClear.TabIndex = 47;
@@ -94,7 +95,7 @@ namespace Stockpro
             // txtUpdatePrice
             // 
             this.txtUpdatePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUpdatePrice.Location = new System.Drawing.Point(32, 95);
+            this.txtUpdatePrice.Location = new System.Drawing.Point(32, 130);
             this.txtUpdatePrice.Name = "txtUpdatePrice";
             this.txtUpdatePrice.Size = new System.Drawing.Size(169, 22);
             this.txtUpdatePrice.TabIndex = 45;
@@ -102,7 +103,7 @@ namespace Stockpro
             // txtUpdateName
             // 
             this.txtUpdateName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUpdateName.Location = new System.Drawing.Point(32, 61);
+            this.txtUpdateName.Location = new System.Drawing.Point(32, 96);
             this.txtUpdateName.Name = "txtUpdateName";
             this.txtUpdateName.Size = new System.Drawing.Size(169, 22);
             this.txtUpdateName.TabIndex = 44;
@@ -110,7 +111,7 @@ namespace Stockpro
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(57, 138);
+            this.btnUpdate.Location = new System.Drawing.Point(57, 173);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(120, 23);
             this.btnUpdate.TabIndex = 43;
@@ -301,6 +302,7 @@ namespace Stockpro
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblUpdateId);
             this.groupBox3.Controls.Add(this.btnUpdateClear);
             this.groupBox3.Controls.Add(this.btnUpdate);
             this.groupBox3.Controls.Add(this.txtUpdateName);
@@ -308,10 +310,20 @@ namespace Stockpro
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(577, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(228, 238);
+            this.groupBox3.Size = new System.Drawing.Size(228, 324);
             this.groupBox3.TabIndex = 52;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Update Product";
+            // 
+            // lblUpdateId
+            // 
+            this.lblUpdateId.AutoSize = true;
+            this.lblUpdateId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateId.Location = new System.Drawing.Point(29, 64);
+            this.lblUpdateId.Name = "lblUpdateId";
+            this.lblUpdateId.Size = new System.Drawing.Size(45, 16);
+            this.lblUpdateId.TabIndex = 48;
+            this.lblUpdateId.Text = "label4";
             // 
             // Product_Manager
             // 
@@ -360,5 +372,6 @@ namespace Stockpro
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label lblUpdateId;
     }
 }

@@ -70,6 +70,7 @@ namespace Stockpro
                 lblSearchName.Text = login.Tables[0].Rows[0]["Name"].ToString();
                 lblSearchPrice.Text = login.Tables[0].Rows[0]["Price"].ToString();
                 //Code for retrieving data ends here
+                lblUpdateId.Text = txtSearchId.Text;
             }
             catch (SqlException SE)
             {
