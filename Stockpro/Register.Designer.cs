@@ -38,7 +38,7 @@ namespace Stockpro
             this.lbPassword = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.lblConfPassword = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxRePassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLblLogin = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -67,7 +67,7 @@ namespace Stockpro
             this.tableLayoutPanel1.Controls.Add(this.lbPassword, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBoxPassword, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblConfPassword, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBoxRePassword, 1, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(118, 79);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -151,14 +151,14 @@ namespace Stockpro
             this.lblConfPassword.TabIndex = 6;
             this.lblConfPassword.Text = "Confirm Password :";
             // 
-            // textBox4
+            // textBoxRePassword
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(196, 227);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(356, 30);
-            this.textBox4.TabIndex = 7;
+            this.textBoxRePassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxRePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxRePassword.Location = new System.Drawing.Point(196, 227);
+            this.textBoxRePassword.Name = "textBoxRePassword";
+            this.textBoxRePassword.Size = new System.Drawing.Size(356, 30);
+            this.textBoxRePassword.TabIndex = 7;
             // 
             // button1
             // 
@@ -169,6 +169,7 @@ namespace Stockpro
             this.button1.TabIndex = 2;
             this.button1.Text = "Create an account";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // linkLblLogin
             // 
@@ -212,7 +213,7 @@ namespace Stockpro
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label lblConfPassword;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxRePassword;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLblLogin;
     }
