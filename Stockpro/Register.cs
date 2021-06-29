@@ -36,11 +36,11 @@ namespace Stockpro
             string UserName = textBoxUserName.Text;
             string Email = textBoxEmail.Text;
             string Password = textBoxPassword.Text;
-            string RePassword = textBoxRePassword.Text;
+            string RePassword = txtrepassword.Text;
 
             if (RePassword == Password)
             {
-                SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Documents\UserLogin.mdf;Integrated Security=True;Connect Timeout=30");
+                SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
                 string Qry = "INSERT INTO LoginData Values('" + UserName + "','" + Email + "','" + Password + "')";
                 SqlCommand cmd = new SqlCommand(Qry, connect);
 
