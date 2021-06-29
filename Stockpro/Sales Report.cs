@@ -46,7 +46,7 @@ namespace Stockpro
 
             lblReportPeriod.Text = year.ToString() + " / " + month.ToString("00") + " / 01    -    " + year.ToString() + " / " + month.ToString("00") + " / " + endDate.ToString();
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ovinr\OneDrive\Documents\testdb.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
 
             con.Open();
 

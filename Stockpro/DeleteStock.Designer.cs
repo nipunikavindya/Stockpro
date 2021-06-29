@@ -60,6 +60,7 @@ namespace Stockpro
             // 
             // txtdelete
             // 
+            this.txtdelete.BackColor = System.Drawing.SystemColors.Menu;
             this.txtdelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdelete.Location = new System.Drawing.Point(154, 17);
             this.txtdelete.Name = "txtdelete";
@@ -94,12 +95,15 @@ namespace Stockpro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 174);
+            this.BackgroundImage = global::Stockpro.Properties.Resources.shop_now_button_ac998536;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(467, 190);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtdelete);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
+            this.DoubleBuffered = true;
             this.Name = "Delete";
             this.Text = "Delete";
             this.ResumeLayout(false);

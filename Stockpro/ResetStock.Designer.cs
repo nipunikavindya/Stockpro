@@ -46,7 +46,7 @@ namespace Stockpro
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 37);
             this.button1.TabIndex = 57;
-            this.button1.Text = "Reset";
+            this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -74,6 +74,7 @@ namespace Stockpro
             // 
             // txtcode
             // 
+            this.txtcode.BackColor = System.Drawing.SystemColors.Menu;
             this.txtcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcode.Location = new System.Drawing.Point(172, 14);
             this.txtcode.Name = "txtcode";
@@ -92,6 +93,7 @@ namespace Stockpro
             // 
             // txtquan
             // 
+            this.txtquan.BackColor = System.Drawing.SystemColors.Menu;
             this.txtquan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtquan.Location = new System.Drawing.Point(172, 73);
             this.txtquan.Name = "txtquan";
@@ -114,6 +116,8 @@ namespace Stockpro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Stockpro.Properties.Resources.shop_now_button_ac998536;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(486, 201);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.txtquan);
@@ -122,6 +126,7 @@ namespace Stockpro
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.Name = "Reset";
             this.Text = "Update";
             this.ResumeLayout(false);

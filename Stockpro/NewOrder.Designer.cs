@@ -75,6 +75,7 @@ namespace Stockpro
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txtOTime);
             this.groupBox1.Controls.Add(this.txtODate);
             this.groupBox1.Controls.Add(this.txtOrderID);
@@ -83,90 +84,101 @@ namespace Stockpro
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(9, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1461, 181);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(1096, 147);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // txtOTime
             // 
-            this.txtOTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOTime.Location = new System.Drawing.Point(929, 102);
+            this.txtOTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtOTime.Location = new System.Drawing.Point(697, 83);
+            this.txtOTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOTime.Name = "txtOTime";
-            this.txtOTime.Size = new System.Drawing.Size(251, 28);
+            this.txtOTime.Size = new System.Drawing.Size(189, 26);
             this.txtOTime.TabIndex = 17;
             // 
             // txtODate
             // 
-            this.txtODate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtODate.Location = new System.Drawing.Point(929, 36);
+            this.txtODate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtODate.Location = new System.Drawing.Point(697, 29);
+            this.txtODate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtODate.Name = "txtODate";
-            this.txtODate.Size = new System.Drawing.Size(251, 28);
+            this.txtODate.Size = new System.Drawing.Size(189, 26);
             this.txtODate.TabIndex = 16;
             // 
             // txtOrderID
             // 
-            this.txtOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrderID.Location = new System.Drawing.Point(331, 102);
+            this.txtOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtOrderID.Location = new System.Drawing.Point(248, 83);
+            this.txtOrderID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOrderID.Name = "txtOrderID";
-            this.txtOrderID.Size = new System.Drawing.Size(251, 28);
+            this.txtOrderID.Size = new System.Drawing.Size(189, 26);
             this.txtOrderID.TabIndex = 15;
             // 
             // txtCusID
             // 
-            this.txtCusID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCusID.Location = new System.Drawing.Point(331, 36);
+            this.txtCusID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtCusID.Location = new System.Drawing.Point(248, 29);
+            this.txtCusID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCusID.Name = "txtCusID";
-            this.txtCusID.Size = new System.Drawing.Size(251, 28);
+            this.txtCusID.Size = new System.Drawing.Size(189, 26);
             this.txtCusID.TabIndex = 14;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(796, 105);
+            this.label5.Location = new System.Drawing.Point(597, 85);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 24);
+            this.label5.Size = new System.Drawing.Size(87, 20);
             this.label5.TabIndex = 13;
             this.label5.Text = "Order Time";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(796, 39);
+            this.label4.Location = new System.Drawing.Point(597, 32);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 24);
+            this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 12;
             this.label4.Text = "Order Date";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(144, 105);
+            this.label3.Location = new System.Drawing.Point(108, 85);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 24);
+            this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Order ID";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(144, 39);
+            this.label1.Location = new System.Drawing.Point(108, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 24);
+            this.label1.Size = new System.Drawing.Size(99, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Customer ID";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.btnConfirmEmail);
             this.groupBox2.Controls.Add(this.btnAddDB);
             this.groupBox2.Controls.Add(this.listView1);
@@ -188,9 +200,11 @@ namespace Stockpro
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(8, 199);
+            this.groupBox2.Location = new System.Drawing.Point(6, 162);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1461, 662);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(1096, 538);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
@@ -199,9 +213,10 @@ namespace Stockpro
             this.btnConfirmEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnConfirmEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmEmail.ForeColor = System.Drawing.Color.Black;
-            this.btnConfirmEmail.Location = new System.Drawing.Point(1223, 596);
+            this.btnConfirmEmail.Location = new System.Drawing.Point(917, 484);
+            this.btnConfirmEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConfirmEmail.Name = "btnConfirmEmail";
-            this.btnConfirmEmail.Size = new System.Drawing.Size(194, 44);
+            this.btnConfirmEmail.Size = new System.Drawing.Size(146, 36);
             this.btnConfirmEmail.TabIndex = 53;
             this.btnConfirmEmail.Text = "Confirm Email";
             this.btnConfirmEmail.UseVisualStyleBackColor = false;
@@ -212,9 +227,10 @@ namespace Stockpro
             this.btnAddDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAddDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddDB.ForeColor = System.Drawing.Color.Black;
-            this.btnAddDB.Location = new System.Drawing.Point(1223, 522);
+            this.btnAddDB.Location = new System.Drawing.Point(917, 424);
+            this.btnAddDB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddDB.Name = "btnAddDB";
-            this.btnAddDB.Size = new System.Drawing.Size(194, 44);
+            this.btnAddDB.Size = new System.Drawing.Size(146, 36);
             this.btnAddDB.TabIndex = 52;
             this.btnAddDB.Text = "Confirm Order";
             this.btnAddDB.UseVisualStyleBackColor = false;
@@ -234,9 +250,10 @@ namespace Stockpro
             this.listView1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(119, 226);
+            this.listView1.Location = new System.Drawing.Point(89, 184);
+            this.listView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1240, 259);
+            this.listView1.Size = new System.Drawing.Size(931, 211);
             this.listView1.TabIndex = 50;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -279,9 +296,10 @@ namespace Stockpro
             // txtSub
             // 
             this.txtSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSub.Location = new System.Drawing.Point(204, 532);
+            this.txtSub.Location = new System.Drawing.Point(153, 432);
+            this.txtSub.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSub.Name = "txtSub";
-            this.txtSub.Size = new System.Drawing.Size(172, 27);
+            this.txtSub.Size = new System.Drawing.Size(130, 23);
             this.txtSub.TabIndex = 48;
             this.txtSub.Text = "0";
             this.txtSub.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -289,9 +307,10 @@ namespace Stockpro
             // txtNetAmount
             // 
             this.txtNetAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNetAmount.Location = new System.Drawing.Point(929, 532);
+            this.txtNetAmount.Location = new System.Drawing.Point(697, 432);
+            this.txtNetAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNetAmount.Name = "txtNetAmount";
-            this.txtNetAmount.Size = new System.Drawing.Size(178, 27);
+            this.txtNetAmount.Size = new System.Drawing.Size(134, 23);
             this.txtNetAmount.TabIndex = 47;
             // 
             // label13
@@ -299,18 +318,20 @@ namespace Stockpro
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(802, 535);
+            this.label13.Location = new System.Drawing.Point(602, 435);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(107, 20);
+            this.label13.Size = new System.Drawing.Size(92, 17);
             this.label13.TabIndex = 46;
             this.label13.Text = "Net Amount";
             // 
             // txtDelCharges
             // 
             this.txtDelCharges.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDelCharges.Location = new System.Drawing.Point(592, 532);
+            this.txtDelCharges.Location = new System.Drawing.Point(444, 432);
+            this.txtDelCharges.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDelCharges.Name = "txtDelCharges";
-            this.txtDelCharges.Size = new System.Drawing.Size(174, 27);
+            this.txtDelCharges.Size = new System.Drawing.Size(132, 23);
             this.txtDelCharges.TabIndex = 45;
             this.txtDelCharges.TextChanged += new System.EventHandler(this.txtDelCharges_TextChanged);
             // 
@@ -319,9 +340,10 @@ namespace Stockpro
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(408, 535);
+            this.label12.Location = new System.Drawing.Point(306, 435);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(154, 20);
+            this.label12.Size = new System.Drawing.Size(132, 17);
             this.label12.TabIndex = 44;
             this.label12.Text = "Delivery Charges";
             // 
@@ -330,20 +352,22 @@ namespace Stockpro
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(89, 535);
+            this.label11.Location = new System.Drawing.Point(67, 435);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(89, 20);
+            this.label11.Size = new System.Drawing.Size(78, 17);
             this.label11.TabIndex = 43;
             this.label11.Text = "Sub Total";
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.LightCoral;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(1223, 31);
+            this.btnDelete.Location = new System.Drawing.Point(874, 25);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(171, 41);
+            this.btnDelete.Size = new System.Drawing.Size(128, 34);
             this.btnDelete.TabIndex = 42;
             this.btnDelete.Text = "Delete Order";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -351,12 +375,13 @@ namespace Stockpro
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnReset.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.Black;
-            this.btnReset.Location = new System.Drawing.Point(1099, 132);
+            this.btnReset.Location = new System.Drawing.Point(824, 107);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(171, 32);
+            this.btnReset.Size = new System.Drawing.Size(128, 26);
             this.btnReset.TabIndex = 41;
             this.btnReset.Text = "New Item";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -364,12 +389,13 @@ namespace Stockpro
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(904, 130);
+            this.btnAdd.Location = new System.Drawing.Point(678, 106);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(171, 32);
+            this.btnAdd.Size = new System.Drawing.Size(128, 26);
             this.btnAdd.TabIndex = 40;
             this.btnAdd.Text = "Add Item";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -415,35 +441,39 @@ namespace Stockpro
             "Vim Floor Cleaner Liquid (200ml)",
             "White Sugar - 1kg",
             ""});
-            this.comboBox1.Location = new System.Drawing.Point(326, 31);
+            this.comboBox1.Location = new System.Drawing.Point(244, 25);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(749, 30);
+            this.comboBox1.Size = new System.Drawing.Size(563, 25);
             this.comboBox1.TabIndex = 38;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(652, 134);
+            this.txtTotal.Location = new System.Drawing.Point(489, 109);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(210, 28);
+            this.txtTotal.Size = new System.Drawing.Size(158, 24);
             this.txtTotal.TabIndex = 37;
             // 
             // txtQty
             // 
             this.txtQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQty.Location = new System.Drawing.Point(408, 134);
+            this.txtQty.Location = new System.Drawing.Point(306, 109);
+            this.txtQty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(149, 28);
+            this.txtQty.Size = new System.Drawing.Size(113, 24);
             this.txtQty.TabIndex = 36;
             this.txtQty.TextChanged += new System.EventHandler(this.txtQty_TextChanged);
             // 
             // txtUPrice
             // 
             this.txtUPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUPrice.Location = new System.Drawing.Point(119, 134);
+            this.txtUPrice.Location = new System.Drawing.Point(89, 109);
+            this.txtUPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUPrice.Name = "txtUPrice";
-            this.txtUPrice.Size = new System.Drawing.Size(193, 28);
+            this.txtUPrice.Size = new System.Drawing.Size(146, 24);
             this.txtUPrice.TabIndex = 35;
             // 
             // label10
@@ -451,9 +481,10 @@ namespace Stockpro
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(722, 80);
+            this.label10.Location = new System.Drawing.Point(542, 65);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 24);
+            this.label10.Size = new System.Drawing.Size(46, 18);
             this.label10.TabIndex = 34;
             this.label10.Text = "Total";
             // 
@@ -462,9 +493,10 @@ namespace Stockpro
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(160, 80);
+            this.label9.Location = new System.Drawing.Point(120, 65);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 24);
+            this.label9.Size = new System.Drawing.Size(82, 18);
             this.label9.TabIndex = 33;
             this.label9.Text = "Unit Price";
             // 
@@ -473,9 +505,10 @@ namespace Stockpro
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(434, 80);
+            this.label8.Location = new System.Drawing.Point(326, 65);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 24);
+            this.label8.Size = new System.Drawing.Size(70, 18);
             this.label8.TabIndex = 32;
             this.label8.Text = "Quantity";
             // 
@@ -484,18 +517,20 @@ namespace Stockpro
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(155, 36);
+            this.label7.Location = new System.Drawing.Point(116, 29);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 24);
+            this.label7.Size = new System.Drawing.Size(92, 18);
             this.label7.TabIndex = 31;
             this.label7.Text = "Select Item";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(157, 41);
+            this.label6.Location = new System.Drawing.Point(118, 33);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 17);
+            this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 30;
             this.label6.Text = "label6";
             // 
@@ -505,11 +540,15 @@ namespace Stockpro
             // 
             // NewOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1481, 874);
+            this.BackgroundImage = global::Stockpro.Properties.Resources.shop_now_button_ac998536;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1028, 609);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NewOrder";
             this.Text = "NewOrder";
             this.Load += new System.EventHandler(this.NewOrder_Load);

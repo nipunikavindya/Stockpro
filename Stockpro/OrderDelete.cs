@@ -21,7 +21,7 @@ namespace Stockpro
         private void btnDelete_Click(object sender, EventArgs e)
         {
             int OrderID = int.Parse(txtID.Text);
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\C# SQL\CusOrder.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
             string delete = "DELETE FROM NewItem WHERE OrderID =" + OrderID + "";
             SqlCommand cmd = new SqlCommand(delete, con);
 
@@ -44,7 +44,7 @@ namespace Stockpro
             }
 
 
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\C# SQL\CusOrder.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
             string del = "DELETE FROM NewOrderDetails WHERE OrderID =" + OrderID + "";
             SqlCommand comd = new SqlCommand(del, conn);
 

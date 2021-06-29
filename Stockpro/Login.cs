@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Stockpro
 {
@@ -19,10 +20,23 @@ namespace Stockpro
 
         private void button2_Click(object sender, EventArgs e)
         {
-            /*database and code should be come here*/
-            this.Hide();
-            OnlineDeliverySystem main = new OnlineDeliverySystem();
-            main.Show();
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlDataAdapter sda = new SqlDataAdapter(@"SELECT  *
+  FROM[dbo].[Login] Where Username = '"+txtusername.Text+"' and Password = '"+txtpassword.Text+"'", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            if (dt.Rows.Count == 1)
+            {
+                this.Hide();
+                OnlineDeliverySystem main = new OnlineDeliverySystem();
+                main.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username and Password...|", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                button1_Click(sender, e);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,11 +44,6 @@ namespace Stockpro
             txtusername.Text = "";
             txtpassword.Clear();
             txtusername.Focus();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

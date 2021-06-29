@@ -41,6 +41,8 @@ namespace Stockpro
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.orderDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -75,9 +77,13 @@ namespace Stockpro
             // 
             // orderDetailsToolStripMenuItem
             // 
+            this.orderDetailsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.orderDeleteToolStripMenuItem,
+            this.sendEmailToolStripMenuItem});
             this.orderDetailsToolStripMenuItem.Name = "orderDetailsToolStripMenuItem";
             this.orderDetailsToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.orderDetailsToolStripMenuItem.Text = "Order Details";
+            this.orderDetailsToolStripMenuItem.Click += new System.EventHandler(this.orderDetailsToolStripMenuItem_Click);
             // 
             // stockManagementToolStripMenuItem
             // 
@@ -106,8 +112,8 @@ namespace Stockpro
             // reportToolStripMenuItem
             // 
             this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
-            this.reportToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.reportToolStripMenuItem.Text = "Report";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.reportToolStripMenuItem.Text = "Sales Report";
             this.reportToolStripMenuItem.Click += new System.EventHandler(this.reportToolStripMenuItem_Click);
             // 
             // statusStrip
@@ -126,6 +132,20 @@ namespace Stockpro
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
             // 
+            // orderDeleteToolStripMenuItem
+            // 
+            this.orderDeleteToolStripMenuItem.Name = "orderDeleteToolStripMenuItem";
+            this.orderDeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.orderDeleteToolStripMenuItem.Text = "Order Delete";
+            this.orderDeleteToolStripMenuItem.Click += new System.EventHandler(this.orderDeleteToolStripMenuItem_Click);
+            // 
+            // sendEmailToolStripMenuItem
+            // 
+            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
+            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sendEmailToolStripMenuItem.Text = "Send Email";
+            this.sendEmailToolStripMenuItem.Click += new System.EventHandler(this.sendEmailToolStripMenuItem_Click);
+            // 
             // OnlineDeliverySystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,7 +159,6 @@ namespace Stockpro
             this.Text = "OnlineDeliverySystem";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnlineDeliverySystem_FormClosing);
-            this.Load += new System.EventHandler(this.OnlineDeliverySystem_Click);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
@@ -162,6 +181,8 @@ namespace Stockpro
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteStockToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem orderDeleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sendEmailToolStripMenuItem;
     }
 }
 
