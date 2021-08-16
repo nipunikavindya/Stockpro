@@ -34,6 +34,8 @@ namespace Stockpro
             this.customerDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.orderDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,8 +43,6 @@ namespace Stockpro
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.orderDeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sendEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +84,20 @@ namespace Stockpro
             this.orderDetailsToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.orderDetailsToolStripMenuItem.Text = "Order Details";
             this.orderDetailsToolStripMenuItem.Click += new System.EventHandler(this.orderDetailsToolStripMenuItem_Click);
+            // 
+            // orderDeleteToolStripMenuItem
+            // 
+            this.orderDeleteToolStripMenuItem.Name = "orderDeleteToolStripMenuItem";
+            this.orderDeleteToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.orderDeleteToolStripMenuItem.Text = "Order Delete";
+            this.orderDeleteToolStripMenuItem.Click += new System.EventHandler(this.orderDeleteToolStripMenuItem_Click);
+            // 
+            // sendEmailToolStripMenuItem
+            // 
+            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
+            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.sendEmailToolStripMenuItem.Text = "Send Email";
+            this.sendEmailToolStripMenuItem.Click += new System.EventHandler(this.sendEmailToolStripMenuItem_Click);
             // 
             // stockManagementToolStripMenuItem
             // 
@@ -131,20 +145,6 @@ namespace Stockpro
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
             this.toolStripStatusLabel.Size = new System.Drawing.Size(39, 17);
             this.toolStripStatusLabel.Text = "Status";
-            // 
-            // orderDeleteToolStripMenuItem
-            // 
-            this.orderDeleteToolStripMenuItem.Name = "orderDeleteToolStripMenuItem";
-            this.orderDeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.orderDeleteToolStripMenuItem.Text = "Order Delete";
-            this.orderDeleteToolStripMenuItem.Click += new System.EventHandler(this.orderDeleteToolStripMenuItem_Click);
-            // 
-            // sendEmailToolStripMenuItem
-            // 
-            this.sendEmailToolStripMenuItem.Name = "sendEmailToolStripMenuItem";
-            this.sendEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sendEmailToolStripMenuItem.Text = "Send Email";
-            this.sendEmailToolStripMenuItem.Click += new System.EventHandler(this.sendEmailToolStripMenuItem_Click);
             // 
             // OnlineDeliverySystem
             // 

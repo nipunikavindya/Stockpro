@@ -18,6 +18,7 @@ namespace Stockpro
             InitializeComponent();
         }
 
+
         private void Stock_Load(object sender, EventArgs e)
         {
             this.ActiveControl = txtdate;
@@ -369,7 +370,8 @@ namespace Stockpro
              return result;
          }*/
 
-
+        
+        
     }
 }
 
