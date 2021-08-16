@@ -24,7 +24,7 @@ namespace Stockpro
             string con = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\C# SQL\CusOrder.mdf;Integrated Security=True;Connect Timeout=30");
             int ID = int.Parse(txtID.Text);
 
-            string qry = "SELECT Email FROM Customer WHERE ID=" + ID + "";
+            string qry = "SELECT Email FROM CustomerDetails WHERE ID=" + ID + "";
             SqlDataAdapter Adpt = new SqlDataAdapter(qry, con);
             DataSet login = new DataSet();
             Adpt.Fill(login);
