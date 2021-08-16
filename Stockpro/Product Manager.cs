@@ -29,7 +29,7 @@ namespace Stockpro
             string name = " " + txtAddName.Text;
             int price = int.Parse(" " + txtAddPrice.Text);
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\malin\Documents\Newdb.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
 
             string addQry = "INSERT INTO Products (Id, Name, Price) VALUES (" + id + ",'" + name + "'," + price + ")";
 
@@ -55,7 +55,7 @@ namespace Stockpro
         {
             int id = int.Parse(txtSearchId.Text);
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\malin\Documents\Newdb.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
 
             string searchQry = "SELECT Name,Price FROM Products WHERE Id = " + id;
 
@@ -88,7 +88,7 @@ namespace Stockpro
             string name = txtUpdateName.Text;
             int price = int.Parse(txtUpdatePrice.Text);
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\malin\Documents\Newdb.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
 
             string upQry = "UPDATE Products SET Name = '" + name + "', Price = " + price + "WHERE Id = " + id;
 
@@ -121,7 +121,7 @@ namespace Stockpro
         {
             int id = int.Parse(txtSearchId.Text);
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\malin\Documents\Newdb.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
 
             string delQry = "DELETE FROM Products WHERE Id = " + id;
 

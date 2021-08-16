@@ -48,9 +48,9 @@ namespace Stockpro
             city.Text = "";
             code.Text = "";
 
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\database.mdf;Integrated Security=True;Connect Timeout=30";
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30";
 
-            SqlDataAdapter sda = new SqlDataAdapter("Select isnull(max(cast(id as int )),0)+1 from details", con);
+            SqlDataAdapter sda = new SqlDataAdapter("Select isnull(max(cast(id as int )),0)+1 from CustomerDetails", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             id.Text = dt.Rows[0][0].ToString();
@@ -77,8 +77,8 @@ namespace Stockpro
             string Date = date.Text;
             string Time = time.Text;
 
-            SqlConnection conect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\database.mdf;Integrated Security=True;Connect Timeout=30");
-            string querry = "INSERT INTO details Values(" + UserID + ",'" + FirstName + "','" + LastName + "','" + Email + "','" + Mobile + "','" + Address + "','" + Street + "','" + City + "'," + PostalCode + ",'" + Date + "','" + Time + "')";
+            SqlConnection conect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
+            string querry = "INSERT INTO CustomerDetails Values(" + UserID + ",'" + FirstName + "','" + LastName + "','" + Email + "','" + Mobile + "','" + Address + "','" + Street + "','" + City + "'," + PostalCode + ",'" + Date + "','" + Time + "')";
             SqlCommand cmd = new SqlCommand(querry, conect);
 
             try
@@ -102,9 +102,9 @@ namespace Stockpro
         private void customer_Load(object sender, EventArgs e)
         {
             //Auto id increment
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\database.mdf;Integrated Security=True;Connect Timeout=30";
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30";
 
-            SqlDataAdapter sda = new SqlDataAdapter("Select isnull(max(cast(id as int )),0)+1 from details", con);
+            SqlDataAdapter sda = new SqlDataAdapter("Select isnull(max(cast(id as int )),0)+1 from CustomerDetails", con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             id.Text = dt.Rows[0][0].ToString();
@@ -113,6 +113,11 @@ namespace Stockpro
             //Date and Time
             date.Text = DateTime.Now.ToLongDateString();
             time.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

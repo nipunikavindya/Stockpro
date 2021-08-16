@@ -29,17 +29,10 @@ namespace Stockpro
         /// </summary>
         private void InitializeComponent()
         {
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button2 = new System.Windows.Forms.Button();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl9 = new System.Windows.Forms.Label();
+            this.lbl12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.txtdate = new System.Windows.Forms.DateTimePicker();
@@ -49,8 +42,7 @@ namespace Stockpro
             this.txtproducttype = new System.Windows.Forms.TextBox();
             this.txtproductcategory = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lbl13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -63,30 +55,31 @@ namespace Stockpro
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtproductcode = new System.Windows.Forms.TextBox();
             this.DGV1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.DGV2 = new System.Windows.Forms.DataGridView();
+            this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "$.No";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Product Code";
-            this.Column2.Name = "Column2";
             // 
             // button3
             // 
@@ -100,21 +93,6 @@ namespace Stockpro
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Product Name";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Product Category";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Product Type";
-            this.Column5.Name = "Column5";
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -127,35 +105,24 @@ namespace Stockpro
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Column7
+            // lbl9
             // 
-            this.Column7.HeaderText = "Quantity";
-            this.Column7.Name = "Column7";
+            this.lbl9.AutoSize = true;
+            this.lbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lbl9.Location = new System.Drawing.Point(1044, 473);
+            this.lbl9.Name = "lbl9";
+            this.lbl9.Size = new System.Drawing.Size(0, 22);
+            this.lbl9.TabIndex = 43;
             // 
-            // Column8
+            // lbl12
             // 
-            this.Column8.HeaderText = "Date";
-            this.Column8.Name = "Column8";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label9.Location = new System.Drawing.Point(1044, 473);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(20, 22);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label5.Location = new System.Drawing.Point(905, 473);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 22);
-            this.label5.TabIndex = 42;
-            this.label5.Text = "Total Quantity :";
+            this.lbl12.AutoSize = true;
+            this.lbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lbl12.Location = new System.Drawing.Point(905, 473);
+            this.lbl12.Name = "lbl12";
+            this.lbl12.Size = new System.Drawing.Size(133, 22);
+            this.lbl12.TabIndex = 42;
+            this.lbl12.Text = "Total Quantity :";
             // 
             // button1
             // 
@@ -165,7 +132,7 @@ namespace Stockpro
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(196, 37);
             this.button1.TabIndex = 56;
-            this.button1.Text = "Reset";
+            this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -184,12 +151,14 @@ namespace Stockpro
             // txtdate
             // 
             this.txtdate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.txtdate.CustomFormat = "dd/MM/yyyy";
             this.txtdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.txtdate.Location = new System.Drawing.Point(716, 26);
             this.txtdate.Name = "txtdate";
             this.txtdate.Size = new System.Drawing.Size(124, 20);
             this.txtdate.TabIndex = 51;
+            this.txtdate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtdate_KeyDown);
             // 
             // label8
             // 
@@ -208,6 +177,7 @@ namespace Stockpro
             this.txtsupplier.Name = "txtsupplier";
             this.txtsupplier.Size = new System.Drawing.Size(155, 26);
             this.txtsupplier.TabIndex = 49;
+            this.txtsupplier.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtsupplier_KeyDown);
             // 
             // label7
             // 
@@ -226,6 +196,7 @@ namespace Stockpro
             this.txtproducttype.Name = "txtproducttype";
             this.txtproducttype.Size = new System.Drawing.Size(198, 26);
             this.txtproducttype.TabIndex = 47;
+            this.txtproducttype.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtproducttype_KeyDown);
             // 
             // txtproductcategory
             // 
@@ -234,6 +205,7 @@ namespace Stockpro
             this.txtproductcategory.Name = "txtproductcategory";
             this.txtproductcategory.Size = new System.Drawing.Size(198, 26);
             this.txtproductcategory.TabIndex = 46;
+            this.txtproductcategory.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtproductcategory_KeyDown);
             // 
             // label6
             // 
@@ -245,20 +217,14 @@ namespace Stockpro
             this.label6.TabIndex = 45;
             this.label6.Text = "Product Type";
             // 
-            // dataGridViewTextBoxColumn1
+            // lbl13
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Supplier";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label13.Location = new System.Drawing.Point(490, 473);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(20, 22);
-            this.label13.TabIndex = 41;
-            this.label13.Text = "0";
+            this.lbl13.AutoSize = true;
+            this.lbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lbl13.Location = new System.Drawing.Point(490, 473);
+            this.lbl13.Name = "lbl13";
+            this.lbl13.Size = new System.Drawing.Size(0, 22);
+            this.lbl13.TabIndex = 41;
             // 
             // label1
             // 
@@ -272,6 +238,7 @@ namespace Stockpro
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.button7);
             this.groupBox2.Controls.Add(this.txtquantity);
             this.groupBox2.Controls.Add(this.label2);
@@ -321,6 +288,8 @@ namespace Stockpro
             this.txtquantity.Name = "txtquantity";
             this.txtquantity.Size = new System.Drawing.Size(59, 26);
             this.txtquantity.TabIndex = 60;
+            this.txtquantity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtquantity_KeyDown);
+            this.txtquantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtquantity_KeyPress);
             // 
             // label2
             // 
@@ -339,6 +308,7 @@ namespace Stockpro
             this.txtproductname.Name = "txtproductname";
             this.txtproductname.Size = new System.Drawing.Size(198, 26);
             this.txtproductname.TabIndex = 42;
+            this.txtproductname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtproductname_KeyDown);
             // 
             // label11
             // 
@@ -382,6 +352,7 @@ namespace Stockpro
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(146, 28);
             this.comboBox1.TabIndex = 37;
+            this.comboBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBox1_KeyDown);
             // 
             // txtproductcode
             // 
@@ -390,6 +361,8 @@ namespace Stockpro
             this.txtproductcode.Name = "txtproductcode";
             this.txtproductcode.Size = new System.Drawing.Size(59, 26);
             this.txtproductcode.TabIndex = 36;
+            this.txtproductcode.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtproductcode_KeyDown);
+            this.txtproductcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtproductcode_KeyPress);
             // 
             // DGV1
             // 
@@ -400,24 +373,59 @@ namespace Stockpro
             this.Column3,
             this.Column4,
             this.Column5,
-            this.dataGridViewTextBoxColumn1,
+            this.col6,
             this.Column7,
-            this.Column8});
+            this.Column8,
+            this.Column9});
             this.DGV1.Location = new System.Drawing.Point(20, 228);
             this.DGV1.Name = "DGV1";
             this.DGV1.Size = new System.Drawing.Size(834, 198);
             this.DGV1.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn3
+            // Column1
             // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Product Name";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.Column1.HeaderText = "$.No";
+            this.Column1.Name = "Column1";
             // 
-            // Column6
+            // Column2
             // 
-            this.Column6.HeaderText = "Available Stocks";
-            this.Column6.Name = "Column6";
+            this.Column2.HeaderText = "Product Code";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Product Name";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Product Category";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Product Type";
+            this.Column5.Name = "Column5";
+            // 
+            // col6
+            // 
+            this.col6.HeaderText = "Supplier";
+            this.col6.Name = "col6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Quantity";
+            this.Column7.Name = "Column7";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Date";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Status";
+            this.Column9.Name = "Column9";
             // 
             // button5
             // 
@@ -429,6 +437,7 @@ namespace Stockpro
             this.button5.TabIndex = 27;
             this.button5.Text = "Search";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -470,17 +479,28 @@ namespace Stockpro
             this.label12.TabIndex = 40;
             this.label12.Text = "Total Products :";
             // 
-            // dataGridView2
+            // DGV2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.Column6});
-            this.dataGridView2.Location = new System.Drawing.Point(26, 130);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(276, 313);
-            this.dataGridView2.TabIndex = 38;
+            this.DGV2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.col1,
+            this.col2});
+            this.DGV2.Location = new System.Drawing.Point(26, 130);
+            this.DGV2.Name = "DGV2";
+            this.DGV2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGV2.Size = new System.Drawing.Size(276, 313);
+            this.DGV2.TabIndex = 38;
+            // 
+            // col1
+            // 
+            this.col1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.col1.HeaderText = "Product Name";
+            this.col1.Name = "col1";
+            // 
+            // col2
+            // 
+            this.col2.HeaderText = "Available Stocks";
+            this.col2.Name = "col2";
             // 
             // groupBox1
             // 
@@ -496,24 +516,50 @@ namespace Stockpro
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Available stocks";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label5.Location = new System.Drawing.Point(496, 473);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 22);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "8";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.label9.Location = new System.Drawing.Point(1034, 473);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(50, 22);
+            this.label9.TabIndex = 45;
+            this.label9.Text = "2550";
+            // 
             // Stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Stockpro.Properties.Resources.shop_now_button_ac998536;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1192, 504);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbl9);
+            this.Controls.Add(this.lbl12);
+            this.Controls.Add(this.lbl13);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.DGV2);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "Stock";
             this.Text = "Stock";
+            this.Load += new System.EventHandler(this.Stock_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -522,18 +568,10 @@ namespace Stockpro
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl9;
+        private System.Windows.Forms.Label lbl12;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DateTimePicker txtdate;
@@ -543,8 +581,7 @@ namespace Stockpro
         private System.Windows.Forms.TextBox txtproducttype;
         private System.Windows.Forms.TextBox txtproductcategory;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl13;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtproductname;
@@ -554,18 +591,29 @@ namespace Stockpro
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox txtproductcode;
         private System.Windows.Forms.DataGridView DGV1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView DGV2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtquantity;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label9;
     }
 }
 

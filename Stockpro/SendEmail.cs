@@ -21,7 +21,7 @@ namespace Stockpro
 
         private void txtID_TextChanged(object sender, EventArgs e)
         {
-            string con = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\C# SQL\CusOrder.mdf;Integrated Security=True;Connect Timeout=30");
+            string con = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
             int ID = int.Parse(txtID.Text);
 
             string qry = "SELECT Email FROM CustomerDetails WHERE ID=" + ID + "";
@@ -41,7 +41,7 @@ namespace Stockpro
 
         private void txtOID_TextChanged(object sender, EventArgs e)
         {
-            string con = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\C# SQL\CusOrder.mdf;Integrated Security=True;Connect Timeout=30");
+            string con = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
             int OrderID = int.Parse(txtOID.Text);
 
             string qry = "SELECT OrderID,CustomerID,OrderDate,OrderTime,SubTotal,DiliveryCharges,NetAmount FROM NewOrderDetails WHERE OrderID=" + OrderID + "";

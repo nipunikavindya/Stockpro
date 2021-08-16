@@ -18,20 +18,52 @@ namespace Stockpro
             InitializeComponent();
         }
 
-        private void stockManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Stock stk = new Stock();
-            stk.MdiParent = this;
-            stk.StartPosition = FormStartPosition.CenterScreen;
-            stk.Show();
-        }
-
         private void customerDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             customer cs = new customer();
             cs.MdiParent = this;
             cs.StartPosition = FormStartPosition.CenterScreen;
             cs.Show();
+        }
+
+        private void productDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Product_Manager pr = new Product_Manager();
+            pr.MdiParent = this;
+            pr.StartPosition = FormStartPosition.CenterScreen;
+            pr.Show();
+        }
+
+        private void orderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewOrder no = new NewOrder();
+            no.MdiParent = this;
+            no.StartPosition = FormStartPosition.CenterScreen;
+            no.Show();
+        }
+
+        private void orderDeleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OrderDelete od = new OrderDelete();
+            od.MdiParent = this;
+            od.StartPosition = FormStartPosition.CenterScreen;
+            od.Show();
+        }
+
+        private void sendEmailToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SendEmail sm = new SendEmail();
+            sm.MdiParent = this;
+            sm.StartPosition = FormStartPosition.CenterScreen;
+            sm.Show();
+        }
+
+        private void stockManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Stock stk = new Stock();
+            stk.MdiParent = this;
+            stk.StartPosition = FormStartPosition.CenterScreen;
+            stk.Show();
         }
 
         private void updateStockToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,16 +82,6 @@ namespace Stockpro
             dlt.Show();
         }
 
-        private void OnlineDeliverySystem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OnlineDeliverySystem_FormClosing(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
         private void reportToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Sales_Report sr = new Sales_Report();
@@ -68,12 +90,13 @@ namespace Stockpro
             sr.Show();
         }
 
-        private void productDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OnlineDeliverySystem_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Product_Manager pr = new Product_Manager();
-            pr.MdiParent = this;
-            pr.StartPosition = FormStartPosition.CenterScreen;
-            pr.Show();
+            Application.Exit();
         }
+
+
+
     }
 }
+

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace Stockpro
 {
@@ -27,6 +29,42 @@ namespace Stockpro
             this.Hide();
             Login lw = new Login();
             lw.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string UserName = textBoxUserName.Text;
+            string Email = textBoxEmail.Text;
+            string Password = textBoxPassword.Text;
+            string RePassword = txtrepassword.Text;
+
+            if (RePassword == Password)
+            {
+                SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
+                string Qry = "INSERT INTO LoginData Values('" + UserName + "','" + Email + "','" + Password + "')";
+                SqlCommand cmd = new SqlCommand(Qry, connect);
+
+                try
+                {
+                    connect.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("You are registered succefully!");
+                }
+
+                catch (SqlException SE)
+                {
+                    MessageBox.Show(SE.ToString());
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Re Check Password");
+
+            }
         }
     }
 }

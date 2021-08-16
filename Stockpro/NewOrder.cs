@@ -192,7 +192,7 @@ namespace Stockpro
             string total = (txtTotal.Text);
 
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\C# SQL\CusOrder.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
             string qry = "INSERT INTO NewItem Values(" + OrderID + "," + CusID + ",'" + item + "'," + qty + ",'" + total + "')";
             SqlCommand cmd = new SqlCommand(qry, con);
 
@@ -273,7 +273,7 @@ namespace Stockpro
             string NetAmount = txtNetAmount.Text;
 
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\C# SQL\CusOrder.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
             string qry = "INSERT INTO NewOrderDetails Values(" + OrderID + "," + CustomerID + ",'" + OrderDate + "','" + OrderTime + "','" + SubTotal + "','" + DiliveryCharges + "','" + NetAmount + "')";
             SqlCommand cmd = new SqlCommand(qry, con);
 

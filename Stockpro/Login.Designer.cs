@@ -36,29 +36,28 @@ namespace Stockpro
             this.txtusername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.linkLabel1.Location = new System.Drawing.Point(444, 275);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.linkLabel1.Location = new System.Drawing.Point(385, 144);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(170, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(122, 17);
             this.linkLabel1.TabIndex = 13;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forget Password?";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.button2.Location = new System.Drawing.Point(531, 187);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(398, 203);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 63);
+            this.button2.Size = new System.Drawing.Size(99, 51);
             this.button2.TabIndex = 12;
             this.button2.Text = "Login";
             this.button2.UseVisualStyleBackColor = false;
@@ -67,75 +66,63 @@ namespace Stockpro
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label2.Location = new System.Drawing.Point(97, 132);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label2.Location = new System.Drawing.Point(97, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 39);
+            this.label2.Size = new System.Drawing.Size(104, 25);
             this.label2.TabIndex = 11;
             this.label2.Text = "Password:";
             // 
             // txtpassword
             // 
-            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.txtpassword.Location = new System.Drawing.Point(348, 129);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpassword.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtpassword.Location = new System.Drawing.Point(261, 102);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
-            this.txtpassword.Size = new System.Drawing.Size(327, 45);
+            this.txtpassword.Size = new System.Drawing.Size(246, 30);
             this.txtpassword.TabIndex = 10;
             // 
             // txtusername
             // 
-            this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.txtusername.Location = new System.Drawing.Point(348, 57);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtusername.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtusername.Location = new System.Drawing.Point(261, 46);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(327, 45);
+            this.txtusername.Size = new System.Drawing.Size(246, 30);
             this.txtusername.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(97, 57);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label1.Location = new System.Drawing.Point(97, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 39);
+            this.label1.Size = new System.Drawing.Size(116, 25);
             this.label1.TabIndex = 8;
             this.label1.Text = "User Name:";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.button1.Location = new System.Drawing.Point(374, 187);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(102, 203);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 63);
+            this.button1.Size = new System.Drawing.Size(99, 51);
             this.button1.TabIndex = 7;
             this.button1.Text = "Clear";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(396, 310);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(267, 25);
-            this.linkLabel2.TabIndex = 14;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "New User ? Create a account";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 384);
-            this.Controls.Add(this.linkLabel2);
+            this.BackgroundImage = global::Stockpro.Properties.Resources.shop_now_button_ac998536;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(590, 312);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
@@ -143,10 +130,9 @@ namespace Stockpro
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.DoubleBuffered = true;
             this.Name = "Login";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,6 +147,5 @@ namespace Stockpro
         private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
