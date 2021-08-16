@@ -23,6 +23,7 @@ namespace Stockpro
         {
             this.ActiveControl = txtdate;
             comboBox1.SelectedIndex = 0;
+            
 
         }
 
@@ -171,6 +172,15 @@ namespace Stockpro
             }
 
         }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            int sum=0;
+            for (int i = 0; i < DGV1.Rows.Count; ++i)
+            {
+                sum += Convert.ToInt32(DGV1.Rows[i].Cells[6].Value);
+            }
+            MessageBox.Show(sum.ToString());
+        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -282,10 +292,10 @@ namespace Stockpro
                     DGV1.Rows[n].Cells["Column4"].Value = item["ProductCategory"].ToString();
                     DGV1.Rows[n].Cells["Column5"].Value = item["ProductType"].ToString();
                     DGV1.Rows[n].Cells["col6"].Value = item["Supplier"].ToString();
-                    DGV1.Rows[n].Cells["Column7"].Value = int.Parse(item["Quantity"].ToString());
+                    DGV1.Rows[n].Cells["dgQuantity"].Value = int.Parse(item["Quantity"].ToString());
                     DGV1.Rows[n].Cells["Column8"].Value = Convert.ToDateTime(item["Date"].ToString()).ToString("dd/MM/yyyy");
                     DGV1.Rows[n].Cells["Column9"].Value = item["Status"].ToString();
-                    /* if ((bool)item["Status"])
+                   /*  if ((bool)item["Status"])
                      {
                          DGV1.Rows[n].Cells["Column9"].Value = "Active";
                      }
@@ -294,13 +304,29 @@ namespace Stockpro
                          DGV1.Rows[n].Cells["Column9"].Value = "Deactive";
                      }*/
                 }
-                
+                if (DGV1.Rows.Count > 0)
+                {
+                    lblp.Text = DGV1.Rows.Count.ToString();
+                    int totQty = 0;
+                    for (int i =0; i < DGV1.Rows.Count; ++i)
+                    {  
+                        totQty += Convert.ToInt32(DGV1.Rows[i].Cells[6].Value);
+                       // totQty += float.Parse(DGV1.Rows[i].Cells["dgQuantity"].Value.ToString());
+                        lblq.Text = totQty.ToString();
+                    }
+                }
+                else
+                {
+                    lblp.Text = "0";
+                    lblq.Text = "0";
+                }
 
             }           
             catch (SqlException se)
             {
                 MessageBox.Show(se.ToString());
             }
+
             
         }
 
@@ -322,6 +348,8 @@ namespace Stockpro
         {
             ResetRecords();
         }
+
+       
 
         //error provider//
         /* private bool Validation()
@@ -370,8 +398,8 @@ namespace Stockpro
              return result;
          }*/
 
-        
-        
+
+
     }
 }
 

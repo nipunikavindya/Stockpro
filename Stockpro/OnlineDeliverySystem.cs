@@ -89,10 +89,24 @@ namespace Stockpro
             sr.StartPosition = FormStartPosition.CenterScreen;
             sr.Show();
         }
+        bool close = true;
 
         private void OnlineDeliverySystem_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if(close)
+            {
+                DialogResult result = MessageBox.Show("Are You Sure You Want to Exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(result == DialogResult.Yes)
+                {
+                    close = false;
+                    Application.Exit();
+                }
+                else
+                {
+                    e.Cancel = true;
+                }
+            }
+            
         }
 
 

@@ -32,7 +32,7 @@ namespace Stockpro
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lbl9 = new System.Windows.Forms.Label();
-            this.lbl12 = new System.Windows.Forms.Label();
+            this.totQty = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.txtdate = new System.Windows.Forms.DateTimePicker();
@@ -55,15 +55,6 @@ namespace Stockpro
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txtproductcode = new System.Windows.Forms.TextBox();
             this.DGV1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
@@ -73,8 +64,18 @@ namespace Stockpro
             this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblp = new System.Windows.Forms.Label();
+            this.lblq = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button8 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV2)).BeginInit();
@@ -114,15 +115,15 @@ namespace Stockpro
             this.lbl9.Size = new System.Drawing.Size(0, 22);
             this.lbl9.TabIndex = 43;
             // 
-            // lbl12
+            // totQty
             // 
-            this.lbl12.AutoSize = true;
-            this.lbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lbl12.Location = new System.Drawing.Point(905, 473);
-            this.lbl12.Name = "lbl12";
-            this.lbl12.Size = new System.Drawing.Size(133, 22);
-            this.lbl12.TabIndex = 42;
-            this.lbl12.Text = "Total Quantity :";
+            this.totQty.AutoSize = true;
+            this.totQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.totQty.Location = new System.Drawing.Point(905, 473);
+            this.totQty.Name = "totQty";
+            this.totQty.Size = new System.Drawing.Size(133, 22);
+            this.totQty.TabIndex = 42;
+            this.totQty.Text = "Total Quantity :";
             // 
             // button1
             // 
@@ -374,58 +375,13 @@ namespace Stockpro
             this.Column4,
             this.Column5,
             this.col6,
-            this.Column7,
+            this.dgQuantity,
             this.Column8,
             this.Column9});
             this.DGV1.Location = new System.Drawing.Point(20, 228);
             this.DGV1.Name = "DGV1";
             this.DGV1.Size = new System.Drawing.Size(834, 198);
             this.DGV1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "$.No";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Product Code";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Product Name";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Product Category";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Product Type";
-            this.Column5.Name = "Column5";
-            // 
-            // col6
-            // 
-            this.col6.HeaderText = "Supplier";
-            this.col6.Name = "col6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Quantity";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Date";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Status";
-            this.Column9.Name = "Column9";
             // 
             // button5
             // 
@@ -516,25 +472,80 @@ namespace Stockpro
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Available stocks";
             // 
-            // label5
+            // lblp
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label5.Location = new System.Drawing.Point(496, 473);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 22);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "8";
+            this.lblp.AutoSize = true;
+            this.lblp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblp.Location = new System.Drawing.Point(496, 473);
+            this.lblp.Name = "lblp";
+            this.lblp.Size = new System.Drawing.Size(0, 22);
+            this.lblp.TabIndex = 44;
             // 
-            // label9
+            // lblq
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label9.Location = new System.Drawing.Point(1034, 473);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 22);
-            this.label9.TabIndex = 45;
-            this.label9.Text = "2550";
+            this.lblq.AutoSize = true;
+            this.lblq.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.lblq.Location = new System.Drawing.Point(1044, 473);
+            this.lblq.Name = "lblq";
+            this.lblq.Size = new System.Drawing.Size(0, 22);
+            this.lblq.TabIndex = 45;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "$.No";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Product Code";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Product Name";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Product Category";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Product Type";
+            this.Column5.Name = "Column5";
+            // 
+            // col6
+            // 
+            this.col6.HeaderText = "Supplier";
+            this.col6.Name = "col6";
+            // 
+            // dgQuantity
+            // 
+            this.dgQuantity.HeaderText = "Quantity";
+            this.dgQuantity.Name = "dgQuantity";
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Date";
+            this.Column8.Name = "Column8";
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Status";
+            this.Column9.Name = "Column9";
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Aqua;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button8.Location = new System.Drawing.Point(58, 458);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(196, 37);
+            this.button8.TabIndex = 62;
+            this.button8.Text = "Available Stocks Sum";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Stock
             // 
@@ -543,10 +554,11 @@ namespace Stockpro
             this.BackgroundImage = global::Stockpro.Properties.Resources.shop_now_button_ac998536;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1192, 504);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.lblq);
+            this.Controls.Add(this.lblp);
             this.Controls.Add(this.lbl9);
-            this.Controls.Add(this.lbl12);
+            this.Controls.Add(this.totQty);
             this.Controls.Add(this.lbl13);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label12);
@@ -571,7 +583,7 @@ namespace Stockpro
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lbl9;
-        private System.Windows.Forms.Label lbl12;
+        private System.Windows.Forms.Label totQty;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DateTimePicker txtdate;
@@ -601,19 +613,20 @@ namespace Stockpro
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtquantity;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col2;
+        private System.Windows.Forms.Label lblp;
+        private System.Windows.Forms.Label lblq;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn col6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgQuantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button8;
     }
 }
 
