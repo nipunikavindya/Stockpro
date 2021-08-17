@@ -24,7 +24,7 @@ namespace Stockpro
             string con = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
             int ID = int.Parse(txtID.Text);
 
-            string qry = "SELECT Email FROM Customer WHERE ID=" + ID + "";
+            string qry = "SELECT Email FROM CustomerDetails WHERE ID=" + ID + "";
             SqlDataAdapter Adpt = new SqlDataAdapter(qry, con);
             DataSet login = new DataSet();
             Adpt.Fill(login);
@@ -44,7 +44,7 @@ namespace Stockpro
             string con = (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Stockpro.mdf;Integrated Security=True;Connect Timeout=30");
             int OrderID = int.Parse(txtOID.Text);
 
-            string qry = "SELECT OrderID,CustomerID,OrderDate,OrderTime,SubTotal,DiliveryCharges,NetAmount FROM NewOrderDetails WHERE OrderID=" + OrderID + "";
+            string qry = "SELECT OrderID,CustomerID,OrderDate,OrderTime,SubTotal,DeliveryCharges,NetAmount FROM NewOrderDetails WHERE OrderID=" + OrderID + "";
             SqlDataAdapter Adpt = new SqlDataAdapter(qry, con);
             DataSet login = new DataSet();
             Adpt.Fill(login);
@@ -54,7 +54,7 @@ namespace Stockpro
             txtODate.Text = login.Tables[0].Rows[0]["OrderDate"].ToString();
             txtOTime.Text = login.Tables[0].Rows[0]["OrderTime"].ToString();
             txtSub.Text = login.Tables[0].Rows[0]["SubTotal"].ToString();
-            txtDelivery.Text = login.Tables[0].Rows[0]["DiliveryCharges"].ToString();
+            txtDelivery.Text = login.Tables[0].Rows[0]["DeliveryCharges"].ToString();
             txtNetAmount.Text = login.Tables[0].Rows[0]["NetAmount"].ToString();
         }
 
